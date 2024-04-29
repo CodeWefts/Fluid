@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.UIElements;
 
 using UnityEngine;
+using System.Threading;
 
 public struct SPH_UI_Refs
 {
@@ -25,6 +26,8 @@ public class SPH_UI : MonoBehaviour
 
     public SPH_UI_Refs UiRefs;
 
+    private float Lockpercent = 0;
+
     void Start()
     {
         UiRefs = FetchUIRefs();
@@ -39,7 +42,9 @@ public class SPH_UI : MonoBehaviour
     {
         if (isOpen)
         {
-            door.transform.position = Vector3.Lerp(initialPosition, openPosition, openSpeed * Time.deltaTime);
+            Lockpercent += openSpeed * Time.deltaTime;
+            door.transform.position = Vector3.Lerp(initialPosition, initialPosition+openPosition, Lockpercent);
+            //door.transform.position = initialPosition + openPosition;
         }
     }
 

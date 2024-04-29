@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   door: {fileID: 1478629018}
   isOpen: 0
-  openPosition: {x: -24, y: 37.7, z: 90}
+  openPosition: {x: -24, y: 0, z: 0}
   openSpeed: 2
 --- !u!4 &142623247
 Transform:
