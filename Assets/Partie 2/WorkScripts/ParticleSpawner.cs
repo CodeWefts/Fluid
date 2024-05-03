@@ -36,11 +36,11 @@ public class ParticleSpawner : MonoBehaviour
         foreach (var item in particles)
         {
             item.UpdateDensity(poly6Coefficient, SmoothingRadius, RefDensity == 0 ? 0.1f : RefDensity, PressureConstant);
-        }
-        foreach (var item in particles)
-        {
             item.UpdateAccel(SmoothingRadius, spikeyGradCoefficient, gravityForce, maximumAcceleration, motionDampingCoefficient);
         }
+        /*foreach (var item in particles)
+        {
+        }*/
         
         foreach (var item in particlesToRemove)
         {

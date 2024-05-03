@@ -112,7 +112,7 @@ namespace Assets
         }
         public void OnTriggerStay2D(Collider2D collision)
         {
-            ParticleScript other = collision.gameObject.GetComponent<ParticleScript>();
+            /*ParticleScript other = collision.gameObject.GetComponent<ParticleScript>();
             if (other != null)
             {
                 foreach (var item in particles)
@@ -124,7 +124,7 @@ namespace Assets
                 result.lengthSqr = (other.transform.position - transform.position).sqrMagnitude;
                 result.len = MathF.Sqrt(result.lengthSqr);
                 particles.Add(result);
-            }
+            }*/
         }
 
         public void OnCollisionStay2D(Collision2D collision)

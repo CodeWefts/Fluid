@@ -25,7 +25,7 @@ namespace Assets
 
         public void FixedUpdate()
         {
-            if (!render) render = transform.GetChild(0);
+            if (!render) render = transform;
             Vector2 vel = outputVelocity + ParticleSpawner.SpawnerInstance.gravityForce * 0.1f;
             if (vel.sqrMagnitude < minParticleStat)
             {
