@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Partie 1/Scene/WaterTower.unity
-    guid: e390aa348f082d54c825799524393a30
+    path: Assets/Scenes/Fluid.unity
+    guid: d230d7c33b097a34db446d6be0df7ecd
   - enabled: 1
-    path: Assets/Partie 2/Scene/SPH.unity
-    guid: bbbf41dc853c4df46b2a60f5e42f84cd
+    path: Assets/Scenes/SPH.unity
+    guid: 06afec238d6acfa438fa2452a3995ee2
   m_configObjects: {}
